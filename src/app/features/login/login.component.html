@@ -1,0 +1,24 @@
+<div class="login">
+  <h2>Text Analyzer – Login</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <label>
+      Username
+      <input [ngModel]="username()" (ngModelChange)="username.set($event)" name="username" required />
+    </label>
+
+    <label>
+      Password
+      <input [ngModel]="password()" (ngModelChange)="password.set($event)" name="password" type="password" required />
+    </label>
+
+    <button type="submit" [disabled]="loading()">Login</button>
+    <p *ngIf="error()" class="error">{{ error() }}</p>
+  </form>
+
+  <div class="hint">
+    <b>Demo users</b><br/>
+    editor / Admin@123<br/>
+    reader / Reader@123
+  </div>
+</div>
