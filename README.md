@@ -1,4 +1,5 @@
 # TextAnalyzerFrontend
+# This project was completed as part of my Master’s program and demonstrates applied skills in task analysis, backend development, and system design.
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
 
